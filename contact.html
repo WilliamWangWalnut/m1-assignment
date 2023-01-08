@@ -12,13 +12,14 @@
 
        <!-- Brand of website -->    
        <header>Contact Us</header>
+       <img src="images/567.jpg" alt=""kitten" width="1280">
        <!-- Main Navvigation -->
        <nav>
            <ul>
                <li><a href="index.html">Home</a></li>
                <li><a href="aboutUS.html">About Us</a></li>
                <li><a href="cats.html">Cats Available for Adoption</a></li>
-               <li><a href="contact.html">Contact</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
            </ul>
        </nav> <!-- End Main Navigation -->
 
@@ -41,6 +42,31 @@
                     <p>Fort Worth, TX 76102</p></td>
                   </tr>
             </table>
+            <h1>Want Us to Reach You?</h1>
+            <form action="/contact" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend> <!-- Create an enclosed border-->
+                    <label>Enter your full name</label><br>
+                    <input type="text" name="name"><br>
+                    <label>Enter your email</label><br>
+                    <input type="email" name="email"><br>
+                    <label>Enter your phone</label><br>
+                    <input  type="tel" name="phone"><br>
+                    <br><label>How should we contact you?</label><br>
+                    <input type="radio" name="email" value="email"/>Email
+                    <input type="radio" name="phone" value="phone"/>Phone<br/>
+                    <br><label>Which cat are you interested adopting?</label><br>
+                    <select> <!-- TO add a drop down menu-->
+                        <option selected>Ash</option>
+                        <option>Big Baker</option>
+                        <option>Hissy</option>
+                        <option>Maxie</option>
+                    </select><br>
+                    <br>How did you hear about us:<br>
+                    <textarea rows="5" cols="30"></textarea><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
         </main> <!-- End Main Content -->
 
         <!-- Footer Information -->
