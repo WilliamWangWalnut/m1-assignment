@@ -79,7 +79,65 @@ ol li{
 }
 
 /* Contact Table */
+th img {
+    width: 20px;
+}
+table,tr,td,th {
+    border: solid 1px;
+    font-size: 25px;
+}
+td a {
+    font-size: 25px;
+}
 
+/* Form */
+fieldset {
+    border: rgb(129,141,179) 3px solid;
+    font-size: larger;
+}
+legend {
+    font-weight: bold;
+    color: rgb(129,141,179);
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+input {
+    display: block;
+    width: 600px;
+    height: 35px;
+    border: lightgrey solid 3px;
+    margin-bottom: 20px;
+}
+input[type="radio"] {
+    width: 30px;
+    height: 25px;
+    display: inline;
+    margin: 20px 10px 30px 20px;
+}
+select {
+    margin: 0 0 30px 0px;
+    width: 600px;
+    height: 35px;
+    text-align: center;
+    font-size: larger;
+    border: lightgrey solid 3px;
+}
+textarea {
+    width: 600px;
+    height: 250px;
+    resize: none;
+    border: lightgrey solid 3px;
+}
+input[type="submit"] {
+    width: 160px;
+    height: 49px;
+    background-color: #4f74c2;
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0px 30px 450px;
+}
 
 /* Footer */
 footer {
