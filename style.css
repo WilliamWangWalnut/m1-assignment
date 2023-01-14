@@ -55,7 +55,7 @@ main {
     background-color: rgb(255,245,238,0.95);
     width: 1700px;
 }
-main h1 { /* this selecter ONLY applys to <h1> within <main> */
+main h1 h2{ /* this selecter ONLY applys to <h1> <h2> within <main> */
     color: rgb(129,141,179);
 }
 
@@ -76,6 +76,9 @@ ol li{
     color: rgb(129,141,179);
     font-size: larger;
     font-weight: bold;
+}
+span img {
+    width: 200px;
 }
 
 /* Contact Table */
