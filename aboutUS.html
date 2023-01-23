@@ -46,10 +46,13 @@
                 We make weekly trips to area shelters to remove animals whose “time is up”. 
                 Some these animals suffer from heartworm infection, fractures, mange, 
                 neglect, and have been used to breed year after year.</p>
-            <h1>Gallery</h1>   
-                <ul id="album">
+            <h1>Gallery</h1>  
 
-                </ul>
+            <!-- Gallery -->
+            <section id="album">
+                
+            </section>
+
             <!--<p><img src="images/IMG_5173.jpg" alt="us image" width="300">
                 <img src="images/IMG_5048.jpg" alt="us image" width="300">
                 <img src="images/IMG_5093.jpg" alt="us image" width="300">
@@ -141,14 +144,20 @@
         var fileNames = []; //To store image file names
         var imageList = []; //To store html list that contain an image
         var image; //To store the assemble image list codes
-        var openList = "<li id='photo'>"; //Declare a variable to contain open list tag
+        var openDiv = "<div class='column'>";
+        var closeDiv = "</div>"
+        var openList = "<li class='photo'>"; //Declare a variable to contain open list tag
         var closeList = "</li>"; //Declare a variable to contain close list tag
+        var opencaption = "<div class='caption'>";
+        var closecaption = "</div>";   
+        var openDesc = "<div class='description'>";  
+        var closeDesc = "</div>";
 
         //Create a loop to create 6 images starting with index of 0
         for (var i=0; i<12; i++) {
             fileNames.push ("cat" + (i+1)); //Create image file name and store in the array
             photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); //Assembl file name into image element
-            image = openList + photos[i] + closeList; //Assemble image element from array with list elements and store in a variable
+            image = openDiv + openList + photos[i] + closeList + opencaption + fileNames[i] + closecaption + openDesc + "<p>This is " + fileNames[i] + "</p>" + closeDesc + closeDiv; //Assemble image element from array with list elements and store in a variable
             imageList.push(image); //Store(push) the assembled list codes into an array
         }
 

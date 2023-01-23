@@ -59,9 +59,56 @@ main h1 h2{ /* this selecter ONLY applys to <h1> <h2> within <main> */
     color: rgb(129,141,179);
 }
 
+/* Clock */
+#timeofday {
+    width: 1800px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #3a3a3a;
+    height: 2.5em;
+    padding-top: 20px;
+    background: linear-gradient(0deg, rgba(251,515,139,1) 0%, rgba(118,213,245,1) 100%);
+}
+
 /* Cat Gallery */
-main #album #photo img{
+#album {
+    border: 1px dotted gray;
+    text-align: center;
+    padding-top: 15px;
+    width: 1400px;
+}
+.column {
+    display: inline-block;
+    position: relative;
+}
+main #album .photo img{
     width: 300px;
+    border: 1px dotted blue;
+    
+}
+.caption {
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.description {
+    position: absolute;
+    font-weight: bold;
+    display: none;
+    background-color: rgb(230, 227, 227);
+    opacity: .8;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 10px;;
+    left: 70px;
+    top: 100px;
+    bottom: 200px;
+}
+.column:hover .description{
+    display: block;
 }
 
 /* Cats OL */
