@@ -59,6 +59,11 @@ main h1 h2{ /* this selecter ONLY applys to <h1> <h2> within <main> */
     color: rgb(129,141,179);
 }
 
+/* Cat Gallery */
+main #album #photo img{
+    width: 300px;
+}
+
 /* Cats OL */
 ol {
     display: flex;
