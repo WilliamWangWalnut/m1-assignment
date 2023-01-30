@@ -54,6 +54,7 @@ main {
     font-size: larger;
     background-color: rgb(255,245,238,0.95);
     width: 1700px;
+    position:relative;
 }
 main h1 h2{ /* this selecter ONLY applys to <h1> <h2> within <main> */
     color: rgb(129,141,179);
@@ -111,10 +112,22 @@ main #album .photo img{
     display: block;
 }
 
-/* Cats OL */
+#boxinbox{
+    display: inline block;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 600px;
+    top: 900px;
+    background-color: rgba(6, 6, 6, 0.2);
+    color: white;
+    /*visibility: hidden;*/
+}
+
+/* Cats OL cat.html*/
 ol {
     display: flex;
-    background-color: rgb(255,245,238,0.95); 
+    background-color: rgba(255,245,238,0.95); 
     width: 1710px;
     text-align: center;
 }
