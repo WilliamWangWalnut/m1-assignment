@@ -24,16 +24,16 @@ a {
     font-size: 30px;
 }
 /* add user interaction style */
-a:link {
+#nav:link {
     color: black;
 }
-a:visited {
+#nav:visited {
     color:#818db3;
 }
-a:hover {
+#nav:hover {
     color: #333
 }
-a:active {
+#nav:active {
     background: #9ed034;
     border-radius: 100%;
     color: white;
@@ -94,7 +94,7 @@ main #album .photo img{
     text-transform: uppercase;
     margin: 5px;
 }
-.description {
+#description {
     position: absolute;
     font-weight: bold;
     display: none;
@@ -107,22 +107,33 @@ main #album .photo img{
     left: 70px;
     top: 100px;
     bottom: 200px;
+    cursor: pointer;
 }
-.column:hover .description{
+.column:hover #description{
     display: block;
 }
 
 #boxinbox{
-    display: inline block;
+    display: none;
     position: absolute;
     width: 500px;
     height: 400px;
-    left: 600px;
-    top: 900px;
-    background-color: rgba(6, 6, 6, 0.2);
+    left: 500px;
+    top: 700px;
+    background-color: rgba(6, 6, 6, 0.6);
     color: white;
-    /*visibility: hidden;*/
+    padding: 20px 0px 0px 30px; 
 }
+#infoHead {
+    text-transform: capitalize;
+    font-size: 25pt;
+}
+#infoLink {
+    color: yellow;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
 
 /* Cats OL cat.html*/
 ol {
