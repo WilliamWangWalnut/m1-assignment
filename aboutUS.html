@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <!-- Link css file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-       <!-- Container to wrap everything -->
-       <div id="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container to wrap everything -->
+    <div id="container">
+      <!-- Brand of website -->
+      <header>About Us</header>
+      <!-- <img src="images/567.jpg" alt=""kitten" width="1280"> -->
+      <!-- Main Navvigation -->
+      <nav>
+        <ul>
+          <li><a id="nav" href="index.html">Home</a></li>
+          <li><a id="nav" href="aboutUS.html">About Us</a></li>
+          <li><a id="nav" href="cats.html">Cats Available for Adoption</a></li>
+          <li><a id="nav" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- End Main Navigation -->
 
-        <!-- Brand of website -->    
-        <header>About Us</header>
-        <!-- <img src="images/567.jpg" alt=""kitten" width="1280"> -->
-        <!-- Main Navvigation -->
-        <nav>
-            <ul>
-                <li><a id="nav" href="index.html">Home</a></li>
-                <li><a id="nav" href="aboutUS.html">About Us</a></li>
-                <li><a id="nav" href="cats.html">Cats Available for Adoption</a></li>
-                <li><a id="nav" href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> <!-- End Main Navigation -->
+      <!-- Add a Clock -->
+      <section id="timeofday">
+        <span>Your Current Local Time: </span>
+        <span id="clock"></span>
+      </section>
 
-        <!-- Add a Clock -->
-        <section id="timeofday">
-            <span>Your Current Local Time: </span>
-            <span id="clock"></span>
-        </section>
+      <!-- Main Content -->
+      <main>
+        <h1 id="try">We are a Group of Cat Caring Individuals</h1>
+        <p>
+          Fort Worth Pet Adoption Service is an organization formed by a group
+          of veterinarians and caring individuals dedicated to helping homeless
+          and unwanted cats in Fort Worth and the surrounding area.
+        </p>
+        <p>
+          We depends on a core group of volunteers to foster and rehabilitate
+          animals in their homes. This provides us with the opportunity to learn
+          first hand about the animal’s needs and behavior in order to
+          facilitate an appropriate adoption.
+        </p>
+        <p>
+          We were incorporated in 2006 and has re-homed more than 19,000
+          animals. The majority of the animals we help originate from high kill
+          shelters. We make weekly trips to area shelters to remove animals
+          whose “time is up”. Some these animals suffer from heartworm
+          infection, fractures, mange, neglect, and have been used to breed year
+          after year.
+        </p>
+        <h1>Gallery</h1>
 
-        <!-- Main Content -->
-        <main>
-            <h1 id="try">We are a Group of Cat Caring Individuals </h1>
-            <p>Fort Worth Pet Adoption Service is an organization formed by a group of 
-                veterinarians and caring individuals dedicated to helping homeless 
-                and unwanted cats in Fort Worth and the surrounding area. </p>
-            <p> We depends on a core group of volunteers to foster and rehabilitate 
-                animals in their homes. This provides us with the opportunity to learn 
-                first hand about the animal’s needs and behavior in order to 
-                facilitate an appropriate adoption.</p> 
-            <p> We were incorporated in 2006 and has re-homed more than 19,000 animals. 
-                The majority of the animals we help originate from high kill shelters. 
-                We make weekly trips to area shelters to remove animals whose “time is up”. 
-                Some these animals suffer from heartworm infection, fractures, mange, 
-                neglect, and have been used to breed year after year.</p>
-            <h1>Gallery</h1>  
+        <!-- Gallery -->
+        <div id="album"></div>
 
-            
-            <!-- Gallery -->
-            <div id="album">
-                
-            </div>
-            
-            <!--Info Box-->
-            <div id="infoBox">
-                            
-            </div>
-            
+        <!--Info Box-->
+        <div id="infoBox"></div>
 
-            <h2><a href="#top">Back to Top</a></h2>  
-        </main> <!-- End Main Content -->
+        <h2><a href="#top">Back to Top</a></h2>
+      </main>
+      <!-- End Main Content -->
 
-        <!-- Footer Information -->
-        <footer>&copy; Copyright 2023</footer>    
-
-    </div> <!-- End Container -->
+      <!-- Footer Information -->
+      <footer>&copy; Copyright 2023</footer>
+    </div>
+    <!-- End Container -->
 
     <!-- JavaScript Codes -->
     <!-- Digital Clock -->
@@ -74,7 +76,6 @@
     <!-- Cat Gallery -->
     <script src="js/gallery.js"></script>
     <!-- Info Box for Gallery -->
-    <script src="js/infoBox.js"></script>
-
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

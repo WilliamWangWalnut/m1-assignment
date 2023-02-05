@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Contact</title>
     <!-- Link css file -->
     <link rel="stylesheet" href="style.css">
@@ -51,7 +52,7 @@
                   </tr>
             </table>
             <h1>Want Us to Reach You?</h1>
-            <form action="/contact" method="post">
+            <form id="form" action="/contact" method="post">
                 <fieldset>
                     <legend>Contact Form</legend> <!-- Create an enclosed border-->
                     
@@ -62,15 +63,27 @@
                     <label>Enter your phone</label><br>
                     <input  type="tel" name="phone"><br>
                     <br><label>How should we contact you?</label><br>
-                    <input checked type="radio" name="email" value="email"/>Email
-                    <input type="radio" name="phone" value="phone"/>Phone<br/>
-                    <br><label>Which cat are you interested adopting?</label><br>
-                    <select> <!-- TO add a drop down menu-->
-                        <option selected>Ash</option>
-                        <option>Big Baker</option>
-                        <option>Hissy</option>
-                        <option>Maxie</option>
-                    </select><br>
+                    <input type="radio" name="email" value="email"/>Email
+                    <input type="radio" name="phone" value="phone"/>Phone<br>
+
+                    <form id="dropDownList">
+                        <br><label>Which cat are you interested adopting?</label><br>
+                        <select id="chooseCat"> <!-- TO add a drop down menu-->
+                            <option>Select One</option>
+                            <option id="ash">Ash</option>
+                            <option id="baker">Big Baker</option>
+                            <option id="hissy">Hissy</option>
+                            <option id="maxie">Maxie</option>
+                        </select>
+                        <div>
+                            <p id="pAsh">Ash is picky about other pets. If you have other animals at home, please tell us here:</p>
+                            <p id="pBaker">Baker is a vegan. If you consume animal products at home, please tell us here:</p>
+                            <p id="pHissy">Hissy loves swimming. If you don't have a pool at home, please tell us here:</p>
+                            <p id="pMaxie">Maxie has his own band. If you can't stand noise from your garage, please tell us here:</p>
+                            <textarea id="tellushere"></textarea>
+                        </div> 
+                    </form>
+
                     <br>How did you hear about us:<br>
                     <textarea rows="5" cols="30"></textarea><br>
                     <input type="submit" value="Submit">
@@ -87,6 +100,8 @@
     <!-- JavaScript Codes -->
     <!-- Digital Clock -->
     <script src="js/clock.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/dropdown.js"></script>
 
 </body>    
 </html>

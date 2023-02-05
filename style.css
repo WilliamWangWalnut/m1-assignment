@@ -113,7 +113,7 @@ main #album .photo img{
     display: block;
 }
 
-#infoBox{
+#boxinbox{
     display: none;
     position: absolute;
     width: 500px;
@@ -217,6 +217,28 @@ input[type="submit"] {
     font-weight: bold;
     margin: 10px 0px 30px 450px;
 }
+
+#pAsh {
+    display: none;
+    color: black;
+}
+#pBaker {
+    display: none;
+    color: black;
+}
+#pHissy {
+    display: none;
+    color: black;
+}
+#pMaxie {
+    display: none;
+    color: black;
+} 
+#tellushere {
+    display: none;
+} 
+
+
 
 /* Footer */
 footer {

@@ -22,17 +22,19 @@ for (var i=0; i<12; i++) {
     boxList.push(box);
 }
 //Display Caption & Paragraph in "infoBox"
-document.getElementById("infoBox").innerHTML = boxList.join(" ")
+//document.getElementById("infoBox").innerHTML = boxList.join(" ")
 
 
 
 
 //3.2. Make <p id='myBtn'> a button to display infoBox
 function displayInfoBox() {
-    document.getElementById("infoBox").style.display = "inline";
+    document.getElementById("boxinbox").style.display = "inline";
 }
 
 //3.3. Make <a id='infoLink'> a button to close infoBox
 function closeInfoBox() {
-    document.getElementById("infoBox").style.display = "none";
+    document.getElementById("boxinbox").style.display = "none";
 }
+
+
