@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cats for Adoption</title>
     <!-- Link css file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
     <!-- Container to wrap everything -->
     <div id="container">
+      <!-- Brand of website -->
+      <header>Cats Available for Adoption</header>
+      <!-- <img src="images/567.jpg" alt=""kitten" width="1280"> -->
+      <!-- Main Navvigation -->
+      <nav>
+        <ul>
+          <li><a id="nav" href="index.html">Home</a></li>
+          <li><a id="nav" href="aboutUS.html">About Us</a></li>
+          <li><a id="nav" href="cats.html">Cats Available for Adoption</a></li>
+          <li><a id="nav" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- End Main Navigation -->
 
-        <!-- Brand of website -->    
-        <header>Cats Available for Adoption</header>
-        <!-- <img src="images/567.jpg" alt=""kitten" width="1280"> -->
-        <!-- Main Navvigation -->
-        <nav>
-            <ul>
-                <li><a id="nav" href="index.html">Home</a></li>
-                <li><a id="nav" href="aboutUS.html">About Us</a></li>
-                <li><a id="nav" href="cats.html">Cats Available for Adoption</a></li>
-                <li><a id="nav" href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> <!-- End Main Navigation -->
+      <!-- Add a Clock -->
+      <section id="timeofday">
+        <span>Your Current Local Time: </span>
+        <span id="clock"></span>
+      </section>
 
-        <!-- Add a Clock -->
-        <section id="timeofday">
-            <span>Your Current Local Time: </span>
-            <span id="clock"></span>
-        </section>
+      <!-- Main Content -->
+      <main>
+        <h1>Here are the Cats Available for Adoption</h1>
+        <div id="gallery">
+          <div id="cats4Adopt">
+            <a href="#/" class="catphoto-toggle">
+              <img src="images/ash.jpg" alt="ash" />
+            </a>
+            <h2>Ash</h2>
+            <p>Female/Spayed</p>
+            <p>Domestic Longhair/Mix</p>
+            <p>8 months</p>
+          </div>
+          <div id="cats4Adopt">
+            <a href="#/" class="catphoto-toggle">
+              <img src="images/bigbaker.jpg" alt="baker" />
+            </a>
+            <h2>Big Baker</h2>
+            <p>Female/Spayed</p>
+            <p>Domestic Shorthair/Mix</p>
+            <p>3 years 2 months</p>
+          </div>
+          <div id="cats4Adopt">
+            <a href="#/" class="catphoto-toggle">
+              <img src="images/hissy.jpg" alt="hissy" />
+            </a>
+            <h2>Hissy</h2>
+            <p>Female</p>
+            <p>Domestic Shorthair/Mix</p>
+            <p>7 months</p>
+          </div>
+          <div id="cats4Adopt">
+            <a href="#/" class="catphoto-toggle">
+              <img src="images/maxie.jpg" alt="maxie" />
+            </a>
+            <h2>Maxie</h2>
+            <p>Unkown</p>
+            <p>Domestic Shorthair/Mix</p>
+            <p>8 months</p>
+          </div>
+        </div>
 
-        <!-- Main Content -->
-        <main>
-            <h1>Here are the Cats Available for Adoption </h1>
-            <ol>
-                <li><span><img src="images/ash.jpg" alt="cats Image"></span> <h2>Ash</h2> <p>Female/Spayed</p> <p>Domestic Longhair/Mix</p> <p>8 months</p></li>
-                <li><span><img src="images/bigbaker.jpg" alt="cats Image"></span> <h2>Big Baker</h2> <p>Female/Spayed</p> <p>Domestic Shorthair/Mix</p> <p>3 years 2 months</p></li>
-                <li><span><img src="images/hissy.jpg" alt="cats Image"></span> <h2>Hissy</h2> <p>Female</p> <p>Domestic Shorthair/Mix</p> <p>7 months</p></li>
-                <li><span><img src="images/maxie.jpg" alt="cats Image"></span> <h2>Maxie</h2> <p>Unkown</p> <p>Domestic Shorthair/Mix</p> <p>8 months</p></li>
-            </ol>
-            <h2><a href="#top">Back to Top</a></h2>    
-        </main> <!-- End Main Content -->
-        <!-- Footer Information -->
-        <footer>&copy; Copyright 2023</footer>    
+        <div class="backdrop"></div>
 
-    </div> <!-- End Container -->
+        <div class="box">
+          <div class="close">x</div>
+        </div>
 
-        <!-- JavaScript Codes -->
+        <h2><a href="#top">Back to Top</a></h2>
+      </main>
+      <!-- End Main Content -->
+      <!-- Footer Information -->
+      <footer>&copy; Copyright 2023</footer>
+    </div>
+    <!-- End Container -->
+
+    <!-- JavaScript Codes -->
     <!-- Digital Clock -->
     <script src="js/clock.js"></script>
-
-</body>
+    <script src="js/lightbox.js"></script>
+  </body>
 </html>

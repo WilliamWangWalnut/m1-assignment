@@ -22,7 +22,7 @@ for (var i=0; i<12; i++) {
     boxList.push(box);
 }
 //Display Caption & Paragraph in "infoBox"
-//document.getElementById("infoBox").innerHTML = boxList.join(" ")
+document.getElementById("infoBox").innerHTML = boxList.join(" ")
 
 
 
@@ -31,6 +31,14 @@ for (var i=0; i<12; i++) {
 function displayInfoBox() {
     document.getElementById("boxinbox").style.display = "inline";
 }
+
+// document.getElementById("boxinbox").onclick = function displayInfoBox() {};
+// function displayInfoBox() {
+//     for (var i = 0; i < 12; i++) {
+//       getElementById("boxinbox").innerHTML = boxList[i];
+//       getElementById("boxinbox").style.display = "inline";
+//     }
+// }
 
 //3.3. Make <a id='infoLink'> a button to close infoBox
 function closeInfoBox() {

@@ -134,27 +134,69 @@ main #album .photo img{
     cursor: pointer;
 }
 
+* {
+    z-index: 1;
+}
+.backdrop {
+    z-index: 2;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.box {
+    z-index: 3;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 5px #444444;
+    -webkit-box-shadow: 0px 0px 5px #444444;
+    box-shadow: 0px 0px 5px #444444;
+}
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: x-large;
+}
 
-/* Cats OL cat.html*/
-ol {
+/* Cats <a> */
+#gallery {
     display: flex;
     background-color: rgba(255,245,238,0.95); 
     width: 1710px;
     text-align: center;
 }
-ol li span{
+.catphoto-toggle {
+    color: black;
+}
+#gallery #cats4Adopt a img {
+    width: 200px;
     display: inline-block;
     margin: 2em 3em;
     padding: .3em .3em;
     background-color: rgba(224, 20, 20, 0.225);
 }
-ol li{
+.box img {
+    width:100%;
+}
+#gallery #cats4Adopt {
     color: rgb(129,141,179);
     font-size: larger;
     font-weight: bold;
-}
-span img {
-    width: 200px;
 }
 
 /* Contact Table */

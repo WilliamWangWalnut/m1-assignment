@@ -14,17 +14,31 @@ var openDesc = "<div id='description' onclick='displayInfoBox()'>";
 var closeDesc = "</div>";
 
 
-//Create a loop to create 12 images starting with index of 0
+//2.1.Create a loop to create 12 images starting with index of 0
 for (var i=0; i<12; i++) {
-    fileNames.push ("cat" + (i+1)); //Create image file name and store in the array
-    photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element
+  fileNames.push("cat" + (i + 1)); //Create image file name and store in the array
+  photos.push(
+    "<img src='images/" + fileNames[i] + ".jpg'" + " alt=" + fileNames[i] + ">"
+  ); //Assemble file name into image element
 
-    image = openDiv + openList + photos[i] + closeList + opencaption + 
-    fileNames[i] + closecaption + openDesc + "<p id = 'myBtn'>This is " + fileNames[i] + "</p>" + 
-    closeDesc + closeDiv; //Assemble image element from array with list elements and store in a variable
-    
-    imageList.push(image); //Store(push) the assembled list codes into an array
+  image =
+    openDiv +
+    openList +
+    photos[i] +
+    closeList +
+    opencaption +
+    fileNames[i] +
+    closecaption +
+    openDesc +
+    "<p id = 'myBtn'>This is " +
+    fileNames[i] +
+    "</p>" +
+    closeDesc +
+    closeDiv; //Assemble image element from array with list elements and store in a variable
+
+  imageList.push(image); //Store(push) the assembled list codes into an array
 }
 
-//Display all six image codes stored in the array
+//2.2.Display all six image codes stored in the array
 document.getElementById("album").innerHTML = imageList.join(" ");
+
